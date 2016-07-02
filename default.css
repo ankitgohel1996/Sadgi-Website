@@ -121,6 +121,21 @@
 		width: 120px; 
 		margin: 0 auto; 
 		height: 120px; 
+		position: relative;
+	}
+
+	.skillImageContainer .value {
+	  width:120px;
+	  position: absolute;
+	  z-index: 1;
+	  left: 0;
+	  right: 0;
+	  top: 50%;
+	  margin-top: -10px;
+	  height: 30px;
+	  font: 20px sans-serif;
+	  text-align: center;
+	  color:#aaa;
 	}
 	
 	.skillTitleContainer {

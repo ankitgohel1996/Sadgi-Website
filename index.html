@@ -10,6 +10,9 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="circle-progress.js"></script>
+	<script src="jquery.appear.js"></script>
+
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	
 	<script>
@@ -192,44 +195,40 @@
 				</div>
 					
 			</div>	
-			
-		
-		
 					
 			<div style='background: #363636; width: 100%; display: inline-block; box-sizing: border-box; padding: 80px 0px 30px 0px;margin: 0 auto; margin-top: 50px;'>
 			
 				<div class='skillContainer'>
-					<div class='skillImageContainer'>
-						<img src='ski1.png' style='width: 100%;'/>
+					<div class="skillImageContainer" id="circle0" data-value="0.9">
+						<div class="value" id="value0">  </div>
 					</div>
 					<div class='skillTitleContainer'>Web/UI Development</div>
 				</div>
 			
 				<div class='skillContainer'>
-					<div class='skillImageContainer'>
-						<img src='ski2.png' style='width: 100%;'/>
+					<div class="skillImageContainer" id="circle1" data-value="0.85">
+						<div class="value" id="value1">  </div>
 					</div>
 					<div class='skillTitleContainer'>Server Setup & Management</div>
 				</div>
 			
 				<div class='skillContainer'>
-					<div class='skillImageContainer'>
-						<img src='ski3.png' style='width: 100%;'/>
+					<div class="skillImageContainer" id="circle2" data-value="0.7">
+						<div class="value" id="value2">  </div>
 					</div>
 					<div class='skillTitleContainer'>Mobile Design & Development</div>
 				</div>
 			
 				<div class='skillContainer'>
-					<div class='skillImageContainer'>
-						<img src='ski4.png' style='width: 100%;'/>
+					<div class="skillImageContainer" id="circle3" data-value="0.8">
+						<div class="value" id="value3">  </div>
 					</div>
 					<div class='skillTitleContainer'>Design & Creative Consulting</div>
 				</div>
 			
+			<script src="circle.js"> </script>
 			</div>
 	
-			
-
 		<div style='width: 100%; display: inline-block; box-sizing: border-box; padding: 30px 0px 30px 0px;margin: 0 auto; background: #393939;'>
 			
 			
@@ -355,5 +354,6 @@
 			</div>
 	
 	</div>
+</body>
 
 
