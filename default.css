@@ -9,7 +9,12 @@
 		z-index: 0;
 	}
 	
-	
+	a
+	{
+		color:inherit;
+		text-decoration: inherit;
+	}
+
 	.divider {
 		width:100%;
 		text-align:center;
@@ -261,23 +266,16 @@
 			height: 186px;
 		
 		}
-	a
-	{
-		color:inherit;
-		text-decoration: inherit;
-	}
-	#header {
+
+	.header {
 		position:fixed;
 		display: block;
 		width: 100%;
 		z-index: 9;
 		color: black;
-		background-color: white;
+		background-color: rgba(255,255,255,0.97);
 		text-align:center;
 		height: 60px;
-		top: 0px;
-		transition: all .5s ease;
-		
 	}
 
 	#temp1
@@ -391,7 +389,7 @@
 
 	
 	#menu-icon {
-			background:#333;;
+			background:#333;
 	}
 
 	.menuwrapper
@@ -611,6 +609,41 @@
 	}
 }
 
+@media only screen and (min-width: 701px) 
+{
+	.header {
+		position:absolute;
+		display: block;
+		width: 100%;
+		z-index: 9;
+		color: white;
+		background-color:transparent;
+		text-align:center;
+		height: 60px;
+	}
+
+	.headerfinal
+	{
+		position:fixed;
+		display: block;
+		width: 100%;
+		z-index: 9;
+		color: black;
+		background-color: white;
+		text-align:center;
+		height: 60px;
+	}
+
+	#menu-icon {
+			background:transparent;
+	}
+
+	.headerfinal #menu-icon
+	{
+		background-color: #333;
+	}
+}
+
 .media {
   display: inline-block;
   position: relative;
@@ -622,6 +655,7 @@
 
 	height:100%;
 	width:100%;
+	object-fit: cover;
 	display: block; 
 }
 

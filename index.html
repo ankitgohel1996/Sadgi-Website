@@ -10,46 +10,24 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="default.js"></script>
 	<script src="circle-progress.js"></script>
 	<script src="jquery.appear.js"></script>
 
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-	
-	<script>
-
-	jQuery(document).ready(function($) 
-	{
-		$( ".hamburger" ).click(function() 
-		{
-			event.stopPropagation();
-			$( ".menuwrapper" ).slideToggle();
-		});
-
-		$('.wrapperitem').click(function()
-		{
-			$(".menuwrapper").slideToggle();
-		});
-
-		$('html').click(function() 
-		{
-			$( ".menuwrapper" ).slideUp();
-		});
-	});
-
-</script>
 
 </head>
 <body>
 
 
-	<div id="header">
+	<div class="header" id="head">
 
 				<div class='menu-aligner'>
 					<div class='menu-spacer' id='logo-left'></div>
 					<div class='menu-block' id='menu-icon'>
 					<a href='#section0'>
 						<img src='icon.png' id='sadgi-icon'/>
-						</a>
+					</a>
 					</div>
 					<div class='menu-spacer' id='logo-right'></div>
 					<div class='menu-links aboutLink'><a href='#section1'>ABOUT</a></div>
@@ -61,13 +39,14 @@
 				</div>
 
 					<div class="menuwrapper" style="display:none">
-						<div class="wrapperitem"> <a href='#section1'>ABOUT</a></div>
-						<div class="wrapperitem"> <a href='#section2'>WHAT WE DO</a></div>
-						<div class="wrapperitem"><a href='#section3'>PROJECTS</a> </div>
-						<div class="wrapperitem"><a href='#section4'>CONTACT</a> </div>
+						<div class="wrapperitem" id="al"> <a href='#section1'>ABOUT</a></div>
+						<div class="wrapperitem" id="sl"> <a href='#section2'>WHAT WE DO</a></div>
+						<div class="wrapperitem" id="pl"><a href='#section3'>PROJECTS</a> </div>
+						<div class="wrapperitem" id="cl"><a href='#section4'>CONTACT</a> </div>
 					</div>
-			</div>	
+	</div>	
 
+	<script src="floatingmenu.js"> </script>
 
 	<div class="section" id="section0" style="background: url('homeBG.jpg'); background-size: contain;">	
 				<img src="bg.png" id='sadgi-welcome'><br>
@@ -114,7 +93,7 @@
 				not when there is  <span style="color: #fff;">nothing left to add</span>, but<br>
 			    when there is nothing left to <span style="color: #fff;">take away.</span>"<br>
 
-			   <span style="color: #ffff33;font-weight:400;font-family:'Source Sans Pro', sans-serif; font-size:25px">-Antoine de Saint-Exupery</span>
+			   <span style="color: #ffff33;font-weight:400;font-family:'Source Sans Pro', sans-serif; text-align:left;font-size:24px;line-height:90%">-Antoine de Saint-Exupery</span>
 					
 			</div>		
 	</div>
@@ -122,7 +101,7 @@
 
 	<div class="section" id="section2" style='padding-bottom: 0px'>
 			
-			<div class='sectionTitleLight'>
+			<div class='sectionTitleLight' id='s2'>
 				<div class="divider">
 					WHAT WE DO
 				</div>
@@ -240,7 +219,7 @@
 
 
 <div class="section" id="section3">
-		<div class='sectionTitleDark'>
+		<div class='sectionTitleDark' id='s3'>
 			<div class="divider">
 				Our Projects
 			</div>	
@@ -283,7 +262,7 @@
 
 			<div class="project">
 
-				<img class="media__image" src="pro22.png">
+				<img class="media__image" src="pro22.png" style="object-fit:fill;">
  				<div class="media__body">
 					<h2>Jingle Bells Preschool</h2>
 				</div>
@@ -291,7 +270,7 @@
 
 			<div class="project">
 
-				<img class="media__image" src="pro1.png">
+				<img class="media__image" src="pro1.png" style="object-fit:fill;">
  				<div class="media__body">
 					<h2>Student Center</h2>
 				</div>
@@ -303,7 +282,7 @@
 <div class="section" id="section4" style='padding-bottom: 20px;'>
 	
 	
-			<div class='sectionTitleLight'>
+			<div class='sectionTitleLight' id='s4'>
 				<div class="divider">
 					GET IN TOUCH
 				</div>
